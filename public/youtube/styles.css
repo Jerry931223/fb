@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* 設置背景為黑色 */
+    color: white; /* 設置文本顏色為白色 */
+}
+
+header {
+    background: #FF0000;
+    color: #FFFFFF;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search {
+    padding: 10px;
+    width: 200px;
+    background-color: #333; /* 設置搜尋欄背景為深色 */
+    color: white; /* 設置搜尋欄文本為白色 */
+}
+
+main {
+    padding: 20px;
+}
+
+#video-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 設置為 5 列的網格 */
+    gap: 20px; /* 設置網格之間的間距 */
+}
+
+.video {
+    width: calc(100% - 20px); /* 設置影片卡片寬度，減去間距 */
+    border: 1px solid #07a36f; /* 綠色邊框 */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1a1a1a;  /* 設置影片卡片背景為深色 */
+    margin: 0 auto; /* 確保每個影片卡片之間有間距 */
+}
+
+.video img {
+    width: 100%;
+    height: 120px; /* 固定高度為 120px */
+    border-radius: 5px;
+    background-color: black; /* 設置背景顏色為黑色 */
+    object-fit: contain; /* 確保圖片不被裁切，保持比例 */
+}
+
+.video h2 {
+    font-size: 14px; /* 調整標題字體大小 */
+    margin: 10px 0;
+    text-align: center;  /* 中心對齊標題 */
+}
+
+.upload-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+}
